@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://kit.fontawesome.com/38226e2193.js" crossorigin="anonymous"></script>
+    <title>personal portfolio website</title>
+</head>
+<body>
+    <!-----------my portfolio header--------->
+    <section id="header">
+        <header>
+            <div class="container">
+               <div class="head">
+
+                <div class="name">
+                    <h2><span>W</span>illiams <i class="fa-solid fa-code"></i>.</h2>
+                </div>
+                <div class="nav">
+                    <nav>
+                        <ul id="sidemeun">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <i class="fas fa-times" onclick="closeMenu()"></i>
+                        </ul>
+                        <i class="fas fa-bars" onclick="openMenu()"></i>
+                    </nav>
+                </div>
+
+               </div>
+            </div>
+        </header>
+    </section>
+
+
+    <!-----------my picture & a write up--------->
+    <section>
+        <div class="container">
+            <div class="pic">
+                <div class="write">
+                    <h2>Hi, i'm <span>Williams</span>, <br> From <span class="Ni">Ni</span>ger<span class="Ni">ia</span> <br>And I'm a <span class="web">Web Developer</span>. </h2>
+                </div>
+                <!-- <div class="picture">
+                    <img src="./IMG/portfolio pic.jpg" alt="">
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--------------About----------->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./IMG/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>My Name is Williams Teryima Orkeghen, i'm from Benue State, Nigeria. I'm a Web Developer with less than a year experience. </p>
+                    <div class="link-title">
+                        <p class="link-title-1 active-link" onclick="openContent()">Skills</p>
+                        <p class="link-title-1 active-link"  onclick="openSecondContent()">Experience</p>
+                        <p class="link-title-1 active-link"  onclick="openEduContent()">Education</p>
+                    </div>
+                    <div class="content" >
+                        <ul>
+                            <li><span>Web Developer</span><br>Web Designing/Web Developement</li>
+                            <li><span>Consultant</span><br>On Web Designing/Web Developement</li>
+                        </ul>
+                    </div>
+
+                    <div class="text-1">
+                        <ul>
+                            <li><span>2023 -- current</span><br>Ebitare Front End bootcamp</li>
+                            <li><span>2023 -- current Team</span><br>Ebitare Front End Team</li>
+                        </ul>
+                    </div>
+
+                    <div class="text-2">
+                        <ul>
+                            <li><span>2023 -- current</span><br><abbr title="Micheal & cecilia ibru university">MCIU</abbr></li>
+                            <li><span>2023 --current</span><br>Ebitare Front end bootcamp</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-------------my works-------------->
+
+
+
+    <section>
+        <div class="container">
+          <div class="image">
+            <h1 class="head-slide">My works</h1>
+            <div class="slider-wrapper">
+                <button id="prev" class="slider-btn">&lt;</button>
+                <div class="image-list">
+                    <img src="./IMG/Screenshot 2023-09-30 201812.png" class="image-item">
+                    <img src="./IMG/Screenshot 2023-09-30 201950.png" class="image-item">
+                    <img src="./IMG/Screenshot 2023-10-01 154950.png" class="image-item">
+                    <img src="./IMG/Screenshot 2023-10-01 155007.png" class="image-item">
+                    <img src="./IMG/Screenshot 2023-10-01 155139.png" class="image-item">
+                    <img src="./IMG/Screenshot 2023-10-01 155156.png" class="image-item">
+                </div>
+                 <button id="next" class="slider-btn">&gt;</button>
+            </div>
+            <div class="slider-scrollbar">
+                <div class="scrollbar-track">
+                    <div class="scrollbar-thumb"></div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+
+    <!---------contact------------>
+
+
+    <section>
+        <div class="Contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>Orkeghenwilliams@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>09163839473</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+            <div class="copyright">
+                <p>copyright &copy; Williams. Made by <i class="fa-solid fa-heart"></i> billy-coder</p>
+            </div>
+    </footer>
+
+
+
+    <script src="/index.js"></script>
+</body>
+</html>
