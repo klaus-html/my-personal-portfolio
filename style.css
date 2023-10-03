@@ -401,45 +401,37 @@ form input, form textarea {
     background: #262626;
 }
 
-/*-----------------------css for small screen--*/
+/*----------------------- media querys css for small screen----------------*/
 
 nav .fas {
     display: none;
 }
 
-@media only screen and ( max-width: 600px) {
+@media only screen and ( max-width: 414px) {
    
+    
 
     #header {
         background-image: url(./IMG/small\ screen.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+        width: 100%;
+        
     }
 
     .write {
 
-        font-size: 50px;
+        font-size: 20px;
         position: absolute;
-        top: -150px;
-        left: 30px;
+        top: 120px;
+        left: -150px;
+        background-color: rgba(0, 0, 0, 0.1);
+        
         
     }
 
-    .write h1 {
-        font-size: 50px;
-        text-align: left;
-    }
-
-    .pic .write h1 {
-        width: 500px;
-        font-size: 50px;
-    }
-
-
-    .write h2{
-        position: absolute;
-        top: 250px;
-        left: 50px;
-        font-size: 19px;
-    }
 
     nav .fas {
         display: block;
@@ -476,46 +468,83 @@ nav .fas {
 
  
     .about-col-1 img {
-        width: 200px;
+        width: 220px;
         height: 200px;
         position: absolute;
-        top: 740px;
-        left: 10px;
+        top: 800px;
+        left: 100px;
     }
     .about-col-2 {
         font-size: 15px;
         margin-left: 100px;
+        text-align: center;
+        position: relative;
+        top: 130px;
+        left: -150px;
         
     }
     .about-col-2 h1 {
         font-size: 20px;
+        margin-top: 10px;
     }
     .about-col-2 p {
         font-size: 15px;
     } 
     .image {
         position: relative;
-        width: 300px;
+        top: 100px;
+        width: 230px;
+    }
+    .sub-title {
+        font-size: 20pt;
     }
     .slider-wrapper {
         margin-left: -120px;
     }
+
+    .head-slide {
+        font-size: 25px;
+        margin-left: -96px;
+        font-weight: lighter;
+        font-style: italic;
+        margin-top: 10px;
+    }
     .slider-scrollbar {
         margin-left: -100px;
     }
-    .image h1{
-        margin-left: -50px;
-        font-size: 20pt;
-    }
+
     .contact-left {
         margin-left: -100px;
     }
     .Contact {
-        margin-top: 20px;
+        margin-top: 150px;
+    }
+
+    .contact-right {
+        margin-right: 20px;
+    }
+
+    .contact-right textarea {
+        height: 80px;
+    }
+
+    .social-icons i {
+        font-size: 20px;
+    }
+
+
+    .mail {
+        font-size: 10pt;
+        margin-left: 10px;
+    }
+    .mail i {
+        font-size: 10px;
+        margin-top: 10px;
+        margin-left: -30px;
     }
 
     footer {
-        width: 490px;
+        width: 399px;
     }
 }
 
